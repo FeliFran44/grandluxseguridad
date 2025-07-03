@@ -19,6 +19,10 @@ require_once 'layout/header.php';
                     <?php endforeach; ?>
                 </select>
             </div>
+            <div class="form-group" style="margin-bottom: 0;">
+                <label for="filtro_fecha" class="sr-only">Filtrar por fecha</label>
+                <input type="date" name="filtro_fecha" id="filtro_fecha" class="form-control" value="<?php echo htmlspecialchars($filtro_fecha_actual); ?>" onchange="this.form.submit()">
+            </div>
         </form>
     </div>
 </div>
